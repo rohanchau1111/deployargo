@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: java-maven
-        image: rohanchau/sampledocker
+        image: rohanchau/java-maven
         ports:
         - containerPort: 80
       
