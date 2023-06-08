@@ -14,9 +14,10 @@ spec:
       labels:
         app: nginx
     spec:
+      restartPolicy: Never
       containers:
       - name: nginx
         image: rohanchau/sampledocker
         ports:
         - containerPort: 80
-      restartPolicy: Never
+      
