@@ -4,7 +4,7 @@ metadata:
   name: spring-boot
 spec:
   selector:
-    app: spring11
+    app: spring
   ports:
     - port: 8080
       targetPort: 8080
