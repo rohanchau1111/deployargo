@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot
+  labels:
+    app: spring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sprinng
+  template:
+    metadata:
+      labels:
+        app: spring
+    spec:
+      containers:
+      - name:  spring-boot
+        image: rohanchau/spring-boot-docker.jar
+        ports:
+        - containerPort: 80
+      
