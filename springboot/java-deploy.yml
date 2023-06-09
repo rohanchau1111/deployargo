@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: spring-boot
   labels:
-    app: spring1
+    app: spring12
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: spring
+      app: spring12
   template:
     metadata:
       labels:
-        app: spring1
+        app: spring12
     spec:
       containers:
       - name:  spring-boot
