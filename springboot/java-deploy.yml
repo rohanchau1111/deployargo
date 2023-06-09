@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name:  spring-boot
-        image: rohanchau/spring-boot-docker.jar
+        image: javatechie/devops-integration
+
         ports:
         - containerPort: 80
       
